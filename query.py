@@ -59,7 +59,7 @@ class TwitterQuery(object):
                 print("Exception thrown: " + str(e))
 
         else:  # write output to file
-            with open('tweets.txt', 'w') as f:
+            with open('tweets.dat', 'w') as f:
                 self.query_result = self.twitter_api.search.tweets(q=self.kwargs.get('q'), count=self.kwargs.get('count', 100))
                 self.json_list.append(self.query_result)
                 # append results to file while get_next_batch() returns True-indicating more tweets are available

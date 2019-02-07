@@ -81,7 +81,7 @@ class Statistics(object):
 
 
 def main():
-    with open('tweets.txt') as f:
+    with open('tweets.dat') as f:
         data = json.loads(f.read())
 
     t = Statistics(data)

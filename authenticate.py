@@ -9,6 +9,7 @@ class Authenticate(object):
     """ Authenticates to the twitter API
 
     Attributes:
+        # add keys to twitter_creds.txt for script to read from; alternatively, keys can be manually entered
         consumer_key: key to identify the client
         consumer_secret: client password used to authenticate with twitter oauth
         oauth_token: key to define privileges
