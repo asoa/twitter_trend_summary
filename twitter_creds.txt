@@ -1,0 +1,5 @@
+{'CONSUMER_KEY': '<replace_me>',
+'CONSUMER_SECRET': '<replace_me>',
+'OAUTH_TOKEN': '<replace_me>',
+'OAUTH_TOKEN_SECRET': '<replace_me>'}
+
