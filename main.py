@@ -13,7 +13,7 @@ def prompt(top_trends):
 
     """
     print("The top trends sorted by count are: \n")
-    for n in range(0, 10):
+    for n in range(0, len(top_trends)):
         print("\t{}: {} {}".format(n + 1, top_trends[n][0], top_trends[n][1]))
 
 
@@ -26,10 +26,10 @@ def main():
                             key=lambda x: x[1], reverse=True)
 
     hashtag = 0
-    while hashtag not in range(1, 11):  # loop while hashtag isn't in range
+    while hashtag not in range(1, len(top_trends)):  # loop while hashtag isn't in range
         try:
             prompt(top_trends)
-            hashtag = int(input("\nWhat hashtag to you want to get statistics for? "))
+            hashtag = int(input("\nWhat hashtag do you want to get statistics for? "))
 
             assert hashtag in range(1, 11)  # if hashtag isn't in range, throw exception
 
